@@ -2,6 +2,11 @@ package com.bhargava.yatharth.SpringCore.innerBeans;
 
 public class Employee {
 
+	@Override
+	public String toString() {
+		return "Employee [id=" + id + ", address=" + address + "]";
+	}
+
 	private int id;
 	private Address address;
 

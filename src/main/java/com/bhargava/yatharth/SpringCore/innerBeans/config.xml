@@ -10,6 +10,13 @@
     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
     ">
  
- 	
+ 	<bean name = "emp" class = "com.bhargava.yatharth.SpringCore.innerBeans.Employee">
+ 		<property name="id"><value>99</value></property>
+ 		<property name="address"><bean name = "add" class = "com.bhargava.yatharth.SpringCore.innerBeans.Address">
+ 			<property name="hno"><value>98</value></property>
+ 			<property name="street"><value>BackStreet</value></property>
+ 			<property name="city"><value>BackCity</value></property>
+ 		</bean></property>
+ 	</bean>
     <context:annotation-config />
 </beans>
